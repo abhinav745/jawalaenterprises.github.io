@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAWALA ENTERPRISES</title>
+    <script src="https://kit.fontawesome.com/adf86300ea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="client.css">
+</head>
+<body>
+<!--Code to write multiple client details, who'll open the demat account-->
+    <div class="nav-bar">
+    <ul>
+       <li><button type="submit" id="btn" value="redirect" onclick="noFault()">Log out</button></li>
+    </ul>
+    </div>  
+    <div class="bgimage">
+    <div id="font">
+    <h1>JAWALA ENTERPRISES</h1>
+    <p>the team of experts</p>
+    </div>
+    <div id="details">
+        <h4>Enter Your Client Details</h4>
+    </div>
+    <div id="container">
+    <form action="post" autocomplete="off" name='google-sheet' onsubmit="return false">
+    <div class="input" id="nameDiv">Date: <input type="date" id="today" name="Date" placeholder="select date" required></div>
+    <div class="input">Emp Name: <input type="text" id="name" name="Emp Name" placeholder="Abhinav Jha" autocomplete="off" required></div>
+    <div class="input">Client Name: <input type="text" id="client_name" name="Client Name" placeholder="Client name" autocomplete="off" required></div>
+    <div class="input">Client Number: <input type="number" id="number" name="Client Number" placeholder="9357xxxx" autocomplete="off" value="" required></div>
+    <div class="input">
+        <label for="cname" class="input" aria-required="true">Company Name:</label>
+        <select name="Company Name" id="cname">
+            <option value=""></option>
+            <option value="ICICI DIRECT">ICICI DIRECT</option>
+            <option value="Angel Broking">Angel Broking</option>
+            <option  value="Upstox">Upstox</option>
+        </select>
+    </div class="t1">
+        <button type="submit" id="entry">Input entry</button>
+        <span id="text1"></span>
+    </div>
+    </form>
+    </div>
+    <table id="display">
+        <tr>
+            <th>Date</th>
+            <th>Emp Name</th>
+            <th>Client Name</th>
+            <th>Client Number</th>
+            <th>Company Name</th>
+        </tr>
+    </table>
+    </div>
+   <!-- footer Area -->
+   <footer class="footer">
+    <div>
+    <p>run by abhinav jha &amp; group</p>
+    <a href="#" class="top"><i class="fa fa-arrow-up" aria-hidden="true"></i> Top</a>
+    <div class="section">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.snapchat.com/" target="_blank"><i class="fa fa-snapchat" aria-hidden="true"></i></a>
+        <a href="https://www.pinterest.ca/" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+        <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    </div>
+    </div>
+    </footer>
+
+<script src="client.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base target="top">
+    <script src="https://kit.fontawesome.com/adf86300ea.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="login.css">
+    <title>JAWALA ENTERPRISES</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <ul>
+            <a href="../Index Page/index.html" target="_self"><li><i class="fa fa-home" aria-hidden="true"></i> Home</li></a>
+            <a href="../Index Page/index.html#about" target="_self"><li><i class="fa fa-clone" aria-hidden="true"></i> About</li></a>
+            <a href="../Index Page/index.html#contact"target="_self"><li><i class="fa fa-address-book" aria-hidden="true"></i> Contact</li></a>
+        </ul>
+    </div>
+    <div class="hero">
+    <div class="font">
+        <h1>JAWALA ENTERPRISES</h1>
+        <p>the team of experts</p>
+    </div>
+    <div class="form-box">
+    <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+        <button type="button" class="toggle-btn" onclick="register()">Register</button>
+    </div>
+    <div class="social-icon">
+        <a href="https://www.facebook.com/" target="_blank"><img src="image1/fb.png" alt="facebook"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="image1/tw.png" alt="twitter"></a>
+        <a href="https://www.google.com" target="_blank"><img src="image1/gp.png" alt="google"></a>
+    </div>
+    <form method="POST" action="" id="login" class="input-group" autocomplete="off" onsubmit="return validate()">
+    <div class="form-grp">
+        <input type="text" class="input-field" placeholder="Username/Email Id" id="user1">
+        <span id="erroru" class="errort"></span>
+        <i class="fa fa-times u_times"></i>
+        <i class="fa fa-check u_check"></i>
+    </div>
+    <div class="form-grp">
+        <input type="password" class="input-field" placeholder="Enter Password" id="pass1">
+        <span id="errorp" class="errort"></span>
+        <i class="fa fa-times p_times"></i>
+        <i class="fa fa-check p_check"></i>
+    </div>
+    <div>
+        <input type="checkbox" name="checkbox" class="check-box"><span>Remember Password</span>
+    </div>
+    <div>
+        <button type="submit" class="submit-btn" value="Log in">Log in</button>
+    </div>
+    </form>
+    <form action="post" autocomplete="off" id="register" name='google-sheet' class="input-group">
+    <div>
+        <input type="text" class="input-field" placeholder="Username" name="Username"  id="user2"  required>
+        <span id="userR" class="errorR"></span>
+    </div>
+    <div>
+        <input type="text" class="input-field" placeholder="Email Id" name="Email" id="email2" required>
+        <span id="emailR" class="errorR"></span>
+    </div>
+    <div>
+        <input type="password" class="input-field" placeholder="Enter Password" name="Password" id="pass2"  required >
+        <span id="passR" class="errorR"></span>
+        <i class="fa fa-eye" area-hidden="true" id="eye1" onclick="toggle1()"></i>
+    </div>
+    <div>
+        <input type="password" class="input-field" placeholder="Confirm Password" name="Confirm Password" id="cnfpass" required>
+        <span id="cnfpassR" class="errorR"></span>
+        <i class="fa fa-eye" area-hidden="true" id="eye2" onclick="toggle2()"></i> 
+    </div>
+    <div>
+        <input type="checkbox" name="checkbox" class="check-box"><span>I agree to the terms &amp; condition</span> 
+    </div>
+    <div>
+        <button type="submit" class="submit-btn" value="register">Register</button>
+    </div>
+   </form>
+    </div>
+    </div>
+    <footer class="footer">
+    <div>
+         <!--Footer Area-->
+        <p>run by abhinav jha &amp; group</p>
+        <a href="#" class="top"><i class="fa fa-arrow-up" aria-hidden="true"></i> Top</a>
+        <div class="section">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.snapchat.com/" target="_blank"><i class="fa fa-snapchat" aria-hidden="true"></i></a>
+            <a href="https://www.pinterest.ca/" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    </footer>
+   
+    <script src="login.js"></script>
+</body>
+</html> 

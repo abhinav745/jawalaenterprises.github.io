@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(image/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+}
+.nav-bar{
+    background:#f1f1f1;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+}
+.nav-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color:linear-gradient(rgba(0,0,0,0.7), rgba(35,37,98,0.5));
+}
+#font{
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-weight: 900;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 7px 10px;
+    background-color: #f1f1f1;
+    color: black;
+    text-align: center;
+ }
+.footer p{
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+ .section{
+    margin: 10px auto;
+    text-align: center;
+ }
+ .section .fa{
+     font-size: 20px;
+     text-rendering: auto;
+     -webkit-font-smoothing: antialiased;
+ }
+  .section .fa:hover{
+      color: rgba(0,0,0,0.3);
+      cursor: pointer;
+  }
+ #welcome{
+     text-align: center;
+     margin-top: 15%;
+ }
+#welcome h1{
+    color: gold;
+    font-family: monospace;
+}
+#welcome span{
+    color: gold;
+    font-weight: bold;
+    font-size: 20px;
+}
+#btn{
+    width: 15%;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: block;
+    margin: 20px 470px 20px;
+    background: linear-gradient(to right, #24ee0a, #fdd90e);
+    border: 1px solid black;
+    outline: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-family: cursive;
+}
